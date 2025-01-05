@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Ashmit Patra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0b0f19 25%, #1c1f2e 100%);
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Orbitron', sans-serif;
+    }
+    a {
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    a:hover {
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff;
+    }
+    .section-border {
+      border: 2px solid transparent;
+      border-image: linear-gradient(to right, #ff8c00, #ffa500, #ff4500) 1;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: linear-gradient(to bottom right, #1c1f2e, #0b0f19);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #ff8c00, #ffa500, #ff4500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="font-sans">
+  <!-- Container -->
+  <div class="max-w-5xl mx-auto my-8 rounded-xl shadow-xl overflow-hidden">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-cyan-500 to-blue-800 text-white px-8 py-12 flex items-center">
+      <img src="./profile-pic.jpg" alt="Profile Picture" class="object-cover w-28 h-28 rounded-full border-4 border-white shadow-xl">
+      <div class="ml-8">
+        <h1 class="text-5xl font-bold gradient-text">Ashmit Patra</h1>
+        <p class="text-xl mt-2">CSE Student | Web Developer | Tech Enthusiast</p>
+        <p class="text-sm mt-2">ashmitpatra77@gmail.com | +91-8480476322</p>
+        <p class="mt-2">
+          <a href="https://github.com/ashmit1795" class="text-teal-400 hover:text-white">GitHub</a> |
+          <a href="https://www.linkedin.com/in/ashmit1116/" class="text-teal-400 hover:text-white">LinkedIn</a>
+        </p>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="mt-[2rem] px-8 py-6 section-border">
+      <h2 class="text-3xl font-semibold gradient-text mb-4">About Me</h2>
+      <p class="text-gray-300 leading-relaxed">
+        I am a 2nd-year Computer Science student at KIIT University, deeply passionate about web development, innovative projects, and community engagement. With a knack for solving problems creatively, I seek opportunities to collaborate and grow in tech-focused environments.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="px-8 py-6 section-border">
+      <h2 class="text-3xl font-semibold gradient-text mb-4">Education</h2>
+      <ul class="list-none space-y-4 text-gray-300">
+        <li>
+          <strong>Matriculation</strong> (CBSE Board) - Vikash Residential School, Bargarh<br>
+          <span class="text-sm">Percentage: 94% | Year: 2021</span>
+        </li>
+        <li>
+          <strong>Intermediate (Science)</strong> (CBSE Board) - Vikash Residential School, Bargarh<br>
+          <span class="text-sm">Percentage: 95% | Year: 2023</span>
+        </li>
+        <li>
+          <strong>B.Tech in Computer Science & Engineering</strong> - KIIT University, Bhubaneswar<br>
+          <span class="text-sm">CGPA: 9.41 | Year: 2023-Present</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="px-8 py-6 section-border">
+      <h2 class="text-3xl font-semibold gradient-text mb-4">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card">
+          <h3 class="text-lg font-semibold text-white">Web Development</h3>
+          <p class="text-gray-300 mt-2">HTML, CSS, JavaScript, Node.js, Express.js, Wordpress, Version Control</p>
+        </div>
+        <div class="card">
+          <h3 class="text-lg font-semibold text-white">Frontend</h3>
+          <p class="text-gray-300 mt-2">Tailwind CSS, Bootstrap</p>
+        </div>
+        <div class="card">
+          <h3 class="text-lg font-semibold text-white">Backend</h3>
+          <p class="text-gray-300 mt-2">MongoDB, Mongoose, APIs, Mongoose Aggregation Pipeline</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="px-8 py-6 section-border">
+      <h2 class="text-3xl font-semibold gradient-text mb-4">Projects</h2>
+      <div class="space-y-6">
+        <div class="card">
+          <h3 class="text-lg font-semibold text-white">Scatch: E-Commerce Website for Bags <span class="text-gray-500">(Ongoing Project)</span></h3>
+          <p class="text-gray-300 mt-2">A visually appealing shopping platform featuring admin dashboards, product management, and a user-friendly design, styled with Tailwind CSS.</p>
+          <p><a href="https://github.com/ashmit1795/scatch" class="text-cyan-400 hover:text-cyan-300">GitHub Repo</a></p>
+        </div>
+        <div class="card">
+          <h3 class="text-lg font-semibold text-white">Playtube - A Video Hosting Platform Backend</h3>
+          <p class="text-gray-300 mt-2">A YouTube-like platform API with core functionalities such as user authentication, video uploads, subscriptions, and community posts, built using Node.js, Express.js, and MongoDB.</p>
+          <p><a href="https://github.com/ashmit1795/backend-project" class="text-cyan-400 hover:text-cyan-300">GitHub Repo</a></p>
+        </div>
+        <div class="card">
+          <h3 class="text-lg font-semibold text-white">Amazon Clone</h3>
+          <p class="text-gray-300 mt-2">Created using HTML, CSS, and JavaScript. Features include add to cart, search products, view all products in cart, local storage methods, object-oriented programming, and simulated ordering of items.</p>
+          <p><a href="https://github.com/ashmit1795/amazon-clone" class="text-cyan-400 hover:text-cyan-300">GitHub Repo</a></p>
+        </div>
+        <div class="card">
+          <h3 class="text-lg font-semibold text-white">Spotify Clone</h3>
+          <p class="text-gray-300 mt-2">Developed a music player with dynamic album addition, song playback, and mobile-responsive design using JavaScript and CSS.</p>
+          <p><a href="https://github.com/ashmit1795/spotify-clone" class="text-cyan-400 hover:text-cyan-300">GitHub Repo</a></p>
+        </div>
+        <div class="card">
+            <h3 class="text-lg font-semibold text-white">
+              <a href="https://ashmit1795.github.io/simon-says-game/" >Simon Says</a>,
+              <a href="https://ashmit1795.github.io/rock-paper-scissors-game/">Rock Paper Scissors</a>,
+              <a href="https://ashmit1795.github.io/bubble-game/">Bubble Game</a>
+              <span class="text-gray-500">(Clickable)</span>
+            </h3>
+            <p class="text-gray-300">Built games to practice JavaScript logic and functionalities, implementing engaging user experiences.</p>
+          </div>
+          <div class="card">
+            <h3 class="text-lg font-semibold text-white">Frontend Projects</h3>
+            <p class="text-gray-300">Designed StudySync, RememberThat, and Personal Portfolio using Bootstrap. All designs were mobile responsive.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-gray-400 px-8 py-6 text-center">
+      <p class="text-sm">
+        I am excited about the opportunity to contribute to <strong class="text-cyan-300">MLSA KIIT</strong>.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
